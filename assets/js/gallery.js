@@ -60,7 +60,9 @@ function buildGallery(leData) {
     leData.map((animals) =>{
         // console.log('wuts dis?', animals);
         buildCard(animals);
+        console.log(animals);
     });
+    
 }
 
 
@@ -117,17 +119,18 @@ function buildCard(myAnimalData) {
     //LONG DESCRIPTION TIL MODAL
     let desLong = document.createElement('p');
     desLong.innerText = myAnimalData.description;
+    desLong.classList.add('longDesc');
     modal.appendChild(desLong);
 
     //VISER MODAL
     galleryWrapper.addEventListener("pointerup", (event)=> {
-        console.log('Der blev klikket.', event);
+        // console.log('Der blev klikket.', event);
         modal.showModal();
     });
 
     //SKJULER MODAL (ikke pt...)
     modal.addEventListener("pointerup", (event)=> {
-        console.log('Vi er i close eventet' + event.currentTarget);
+        // console.log('Vi er i close eventet' + event.currentTarget);
         modal.close();
 
     });

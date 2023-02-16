@@ -112,13 +112,15 @@ padding-top: 100px;
   top: 10px;
   left: 0vw;
 }
-.escText{
+/* .escText{
   position: absolute;
   color: #eeeeee;
   top: 10px;
   right: 0vw;
+} */
+.longDesc{
+  padding: 5px;
 }
-
 .detailView {
   display: block;
   position: relative;
